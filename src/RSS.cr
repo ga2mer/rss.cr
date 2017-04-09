@@ -5,36 +5,21 @@ class RSS
     @items = [] of Hash(String, String)
 
     def initialize(
-            title : String = "Untitled RSS Feed", 
-            description : String = "", 
-            generator : String = "RSS for Crystal",
-            site_url : String = "",
+            @title : String = "Untitled RSS Feed", 
+            @description : String = "", 
+            @generator : String = "RSS for Crystal",
+            @site_url : String = "",
             #feed_url : String = "",
-            author : String = "",
-            pubDate : String = "",
-            copyright : String = "",
-            language : String = "",
-            managingEditor : String = "",
-            webMaster : String = "",
-            docs : String = "",
-            ttl : String = "",
+            @author : String = "",
+            @pubDate : String = "",
+            @copyright : String = "",
+            @language : String = "",
+            @managingEditor : String = "",
+            @webMaster : String = "",
+            @docs : String = "",
+            @ttl : String = "",
             #hub : String = ""
         )
-            @title = title
-            @description = description
-            @generator = generator
-
-            @site_url = site_url
-            #@feed_url = feed_url
-            @author = author
-            @pubDate = pubDate
-            @copyright = copyright
-            @language = language
-            @managingEditor = managingEditor
-            @webMaster = webMaster
-            @docs = docs
-            @ttl = ttl
-            #@hub = hub
     end
 
     def item(
